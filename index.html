@@ -93,9 +93,16 @@ console.log(text); */
         console.log(you); */
         var Food = ['Beans', 'Rice', 'tea', 'water'];
         var myString = "I am very hungry for";
-        if ()
+
         for (var i = 0; i < Food.length; i++) {
-            console.log(`${myString} ${Food[i]}`);
+            var Remainder = i % 2;
+            if (Remainder === 0) {
+                var FoodUpper = Food[i].toUpperCase();
+                console.log(`${myString} ${FoodUpper}`);
+            } else {
+                console.log(`${myString} ${Food[i]}`);
+            }
+            
         }
         
         
