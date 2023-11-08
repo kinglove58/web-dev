@@ -168,10 +168,15 @@ console.log(text); */
 
        function Randomvalue (max, min) {
         let returnValue = max - min + 1;
-        console.log(returnValue);
+        let randomNum = Math.random();
+        let randomVal = randomNum * returnValue;
+        let roundedNum = Math.floor(randomVal);
+        console.log(roundedNum);
        }
 
        Randomvalue(10, 6);
+
+
         
             </script>
 </body>
