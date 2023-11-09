@@ -166,14 +166,14 @@ console.log(text); */
 
        // console.log(Math.random);
 
-    let foods = ['chicken', 'rice', 'bread', 'what'];
+    let foods = ['chicken', 'rice', 'bread', 'what' 'iyan'];
 
     function Randomvalue (max, min) {
-        let returnValue = max - min + 1;
+        /* let returnValue = max - min + 1;
         let randomNum = Math.random();
         let randomVal = randomNum * returnValue;
-        let roundedNum = Math.floor(randomVal);
-        return roundedNum;
+        let roundedNum = Math.floor(randomVal); */
+        return Math.floor((max - min + 1) * Math.random()) + min ;
     }
     //creating a random integer from max and min 
     console.log(foods[Randomvalue(3, 0)]);
