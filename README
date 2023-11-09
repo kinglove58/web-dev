@@ -1,1 +1,28 @@
-# This project is on essential of Javascript
+# Random Food Selector
+
+This project is a simple JavaScript application that selects a random food item from a predefined list.
+
+## How It Works
+
+The application uses a JavaScript function named `Randomvalue` to generate a random index for the `foods` array. The `Randomvalue` function takes two parameters: `max` and `min`, which define the range of possible indices.
+
+The `Randomvalue` function works as follows:
+
+1. Calculate the range of possible values (`returnValue`) by subtracting `min` from `max` and adding 1.
+2. Generate a random number (`randomNum`) between 0 (inclusive) and 1 (exclusive).
+3. Scale the random number to the desired range to get `randomVal`.
+4. Round `randomVal` down to the nearest whole number to get `roundedNum`, which is the final result.
+
+The application then logs the food item at the randomly generated index to the console.
+
+## Usage
+
+To use this application, simply open the HTML file in your browser. The randomly selected food item will be logged to the console.
+
+## Contributing
+
+Contributions are welcome. Please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
