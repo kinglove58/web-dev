@@ -166,15 +166,17 @@ console.log(text); */
 
        // console.log(Math.random);
 
-       function Randomvalue (max, min) {
+    let foods = ['chicken', 'rice', 'bread', 'what'];
+
+    function Randomvalue (max, min) {
         let returnValue = max - min + 1;
         let randomNum = Math.random();
         let randomVal = randomNum * returnValue;
         let roundedNum = Math.floor(randomVal);
-        console.log(roundedNum);
-       }
+        return roundedNum;
+    }
 
-       Randomvalue(10, 6);
+    console.log(foods[Randomvalue(3, 0)]);
 
 
         
