@@ -7,8 +7,11 @@
 </head>
 <body>
     <!-- <p id="one">Here is a new unique id</p> -->
-    <p id="yes">nice one you hear</p>
-    <p class = 'special'>How are you doing today?</p>
+    <div id="yes">
+        <p>nice one you hear</p>
+        <p class = 'special'>How are you doing today?</p>
+    </div>
+    
     
     <script>
         // let myParagraph = document.getElementsByTagName("p");
@@ -18,8 +21,7 @@
         // console.log(myParagraph[i]);
         // alert('Here is another paragraph ${i}');
         // }
-        let myText = document.querySelector('.special, #yes');
-        myText.style.color= 'red';
+        let myText = document.querySelector('#yes').innerHTML = "<p> I am  here </p>";
         
     </script>
 </body>
