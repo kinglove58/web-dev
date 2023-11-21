@@ -16,6 +16,11 @@
     <form action="post">
         <label><input type="checkbox">No</label>
     </form>
+
+    <div>
+        <p>Here is me practicing</p>
+        <p>Here is me practicing</p>
+    </div>
     
     
     <script>
@@ -29,8 +34,14 @@
         // let myText = document.querySelector('#yes').innerHTML = "<p> I am  here </p>";
         // let firstPara = document.querySelector('p');
         // firstPara.className = 'blue';
-        let myChecked = document.querySelector('input');
-        myChecked.setAttribute('checked', 'checked');
+        /* let myChecked = document.querySelector('input');
+        myChecked.setAttribute('checked', 'checked'); */
+        let Para = document.createElement('p');
+        let myText = document.createTextNode('I am encouraging myself');
+        Para.appendChild(myText);
+        let myDiv = document.querySelector('div');
+        myDiv.appendChild(Para);
+
         
     </script>
 </body>
