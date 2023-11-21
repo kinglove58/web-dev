@@ -7,10 +7,15 @@
 </head>
 <body>
     <!-- <p id="one">Here is a new unique id</p> -->
-    <div id="yes">
+    <!-- <div id="yes">
         <p>nice one you hear</p>
+        <p>How are you doing today?</p>
         <p class = 'special'>How are you doing today?</p>
-    </div>
+    </div> -->
+
+    <form action="post">
+        <label><input type="checkbox">No</label>
+    </form>
     
     
     <script>
@@ -22,8 +27,10 @@
         // alert('Here is another paragraph ${i}');
         // }
         // let myText = document.querySelector('#yes').innerHTML = "<p> I am  here </p>";
-        let firstPara = document.querySelector('p');
-        firstPara.className = 'blue';
+        // let firstPara = document.querySelector('p');
+        // firstPara.className = 'blue';
+        let myChecked = document.querySelector('input');
+        myChecked.setAttribute('checked', 'checked');
         
     </script>
 </body>
